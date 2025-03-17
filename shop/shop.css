@@ -1,0 +1,22 @@
+body {
+    background-image: url(../bricks.png);
+    font-family: "Google Sans", sans-serif;
+    overflow: scroll;
+}
+
+th, table, td{
+    border: 1px solid black;
+    color: white;
+}
+
+table {
+    background-color: rgb(41, 40, 40);
+}
+
+th {
+    background-color: rgb(68, 65, 65);
+}
+
+th:hover, td:hover{
+    background-color: rgb(68, 65, 65);
+}
