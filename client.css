@@ -1,0 +1,129 @@
+body {
+    background-image: url(bricks.png);
+    overflow: hidden;
+}
+
+.post {
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 250px;
+    max-width: 500px;
+    border-radius: 10px;
+    align-self: center;
+    display:flexbox;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;   
+    position: relative;
+    text-shadow: 0px 0px 5px white;
+    font-family: "Google Sans", sans-serif;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.post:hover {
+    height: 260px;
+    max-width: 510px;
+}
+
+#postbox {
+    position: absolute;
+    top: 0;
+    right: -520px;
+    height: 100vh;
+    width: 500px;
+    background: rgb(139, 136, 136);
+    transition: 200ms;
+    padding: 10px;
+    font-family: "Google Sans", sans-serif;
+    border-left: 5px solid rgb(60, 57, 57);
+    overflow: scroll;
+    display: none;
+}
+
+.name {
+    background-color: rgba(35, 22, 94, 0.402);
+    padding: 5px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.health {
+    background-color: rgba(201, 44, 44, 0.402);
+    padding: 5px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    max-width: 250px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.stats {
+    background-color: rgba(201, 185, 44, 0.402);
+    padding: 5px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    max-width: 250px;
+    display: inline-block;
+}
+
+
+.comment {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.comment p {
+    margin-top: -2px;
+}
+
+a.nav {
+    padding: 7px;
+    background-color: rgba(165, 42, 42, 0.721);
+    font-family: "Google Sans", "Arial", sans-serif;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+a.user {
+    color: black;
+    transition: 200ms;
+}
+
+a.user:hover {
+    color: rgb(156, 82, 25);
+}
+
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.481);
+    display: none;
+    transition: 200ms;
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+}
+
+#modalimg {
+    min-height: 250px;
+    min-width: 250px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+    /* vertical-align: ; */
+}
+
+
+#pimg {
+    cursor: pointer;
+}
+
+#cpb {
+    font-size: 25px
+}
